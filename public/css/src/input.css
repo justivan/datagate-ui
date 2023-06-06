@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+[x-cloak] {
+  display: none !important;
+}
+
+.choices {
+  @apply text-sm;
+}
+
+.choices__input {
+  @apply mb-0 bg-gray-50 text-sm focus:ring-0;
+}
+
+.choices.is-disabled .choices__inner,
+.choices.is-disabled .choices__input {
+  @apply bg-gray-50;
+}
+
+.choices[data-type*="select-one"] .choices__inner {
+  @apply p-2.5;
+}
+
+.choices__inner {
+  @apply min-h-0 rounded-lg border border-gray-300 bg-gray-50 p-0 dark:border-gray-600 dark:bg-gray-700 dark:text-white;
+}
+
+.choices__list--single {
+  @apply p-0;
+}
+
+.choices__list--dropdown {
+  @apply mt-0.5 rounded-lg border border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white;
+}
+
+.choices[data-type*="select-one"] .choices__input {
+  @apply bg-gray-50 p-2.5 text-sm focus:ring-primary-600 dark:bg-gray-700 dark:text-white dark:focus:ring-primary-500;
+}
+
+.choices[data-type*="select-multiple"] .choices__input {
+  @apply bg-gray-50 p-2.5 text-sm focus:ring-primary-600 dark:bg-gray-700 dark:text-white dark:focus:ring-primary-500;
+}
+
+.choices__list--dropdown .choices__item--selectable.is-highlighted {
+  @apply bg-gray-100 dark:bg-gray-600;
+}
+
+.is-open .choices__list--dropdown,
+.is-open .choices__list[aria-expanded] {
+  @apply my-1 border-gray-300 dark:border-gray-600;
+}
+
+.is-open .choices__inner {
+  @apply rounded-lg border-primary-600 ring-1 ring-primary-600 dark:border-primary-500 dark:ring-primary-500;
+}
+
+.is-flipped.is-open .choices__inner {
+  @apply rounded-lg;
+}
+
+.is-flipped .choices__list--dropdown,
+.is-flipped .choices__list[aria-expanded] {
+  @apply rounded-lg;
+}
+
+.choices__list--multiple .choices__item {
+  @apply ml-1 mt-1 rounded bg-primary-500 border-primary-600
+}
+
+.choices__list--dropdown .choices__item {
+  @apply whitespace-nowrap overflow-hidden
+}
+
+.is-active.choices__list--dropdown, .is-active.choices__list[aria-expanded] {
+  @apply rounded-lg
+}
