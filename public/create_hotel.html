@@ -127,79 +127,114 @@
         </div>
       </div>
     </nav>
+
     <div class="flex h-full flex-col bg-gray-50 p-3 antialiased dark:bg-gray-900 sm:p-5">
       <div class="relative h-full overflow-hidden bg-white shadow-md dark:bg-gray-900 sm:rounded-sm">
         <!-- block_content__start -->
         <div class="overflow-auto h-full">
-          <div class="mx-auto max-w-2xl px-4 py-8">
-            <h2 class="mb-4 text-2xl font-bold text-gray-900 dark:text-white">Add hotel</h2>
-            <form action="#" method="post" novalidate autocomplete="off">
-              <h2 class="text-base font-semibold leading-7 text-gray-900 mt-6 dark:text-white">General Information</h2>
-              <div class="grid gap-4 grid-cols-1 sm:grid-cols-6 sm:gap-6 mt-6 border-b border-gray-900/10 pb-10 dark:border-gray-700">
-                <div class="col-span-full">
-                  <label for="input-text" class="mb-1.5 block text-sm font-medium text-gray-900 dark:text-white">Name</label>
-                  <input type="text" name="input-text" id="input-text" class="block w-full rounded-md border border-gray-300 bg-gray-50 p-2 text-sm text-gray-900 focus:border-primary-600 focus:ring-primary-600 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-primary-500 dark:focus:ring-primary-500" required="" />
-                </div>
-                <div class="sm:col-span-3">
-                  <label for="input-text" class="mb-1.5 block text-sm font-medium text-gray-900 dark:text-white">Category</label>
-                  <input type="text" name="input-text" id="input-text" class="block w-full rounded-md border border-gray-300 bg-gray-50 p-2 text-sm text-gray-900 focus:border-primary-600 focus:ring-primary-600 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-primary-500 dark:focus:ring-primary-500" required="" />
-                </div>
-                <div class="sm:col-span-3">
-                  <label for="input-text" class="mb-1.5 block text-sm font-medium text-gray-900 dark:text-white">Chain</label>
-                  <input type="text" name="input-text" id="input-text" class="block w-full rounded-md border border-gray-300 bg-gray-50 p-2 text-sm text-gray-900 focus:border-primary-600 focus:ring-primary-600 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-primary-500 dark:focus:ring-primary-500" required="" />
-                </div>
-              </div>
-              <h2 class="text-base font-semibold leading-7 text-gray-900 mt-6 dark:text-white">Contact</h2>
-              <div class="grid gap-4 grid-cols-1 sm:grid-cols-6 sm:gap-6 mt-6 border-b border-gray-900/10 pb-10 dark:border-gray-700">
-                <div class="sm:col-span-3">
-                  <label for="input-text" class="mb-1.5 block text-sm font-medium text-gray-900 dark:text-white">Hotel Sales</label>
-                  <input type="text" name="input-text" id="input-text" class="block w-full rounded-md border border-gray-300 bg-gray-50 p-2 text-sm text-gray-900 focus:border-primary-600 focus:ring-primary-600 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-primary-500 dark:focus:ring-primary-500" required="" />
-                </div>
-                <div class="sm:col-span-3">
-                  <label for="input-text" class="mb-1.5 block text-sm font-medium text-gray-900 dark:text-white">Purchase Manager</label>
-                  <input type="text" name="input-text" id="input-text" class="block w-full rounded-md border border-gray-300 bg-gray-50 p-2 text-sm text-gray-900 focus:border-primary-600 focus:ring-primary-600 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-primary-500 dark:focus:ring-primary-500" required="" />
-                </div>
-              </div>
-              <h2 class="text-base font-semibold leading-7 text-gray-900 mt-6 dark:text-white">Location</h2>
-              <div class="grid gap-4 grid-cols-1 sm:grid-cols-6 sm:gap-6 mt-6 border-b border-gray-900/10 pb-10 dark:border-gray-700">
-                <div class="sm:col-span-2">
-                  <label for="input-text" class="mb-1.5 block text-sm font-medium text-gray-900 dark:text-white">Area</label>
-                  <input type="text" name="input-text" id="input-text" class="block w-full rounded-md border border-gray-300 bg-gray-50 p-2 text-sm text-gray-900 focus:border-primary-600 focus:ring-primary-600 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-primary-500 dark:focus:ring-primary-500" required="" />
-                </div>
-                <div class="sm:col-span-2">
-                  <label for="input-text" class="mb-1.5 block text-sm font-medium text-gray-900 dark:text-white">Latitude</label>
-                  <input type="text" name="input-text" id="input-text" class="block w-full rounded-md border border-gray-300 bg-gray-50 p-2 text-sm text-gray-900 focus:border-primary-600 focus:ring-primary-600 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-primary-500 dark:focus:ring-primary-500" required="" />
-                </div>
-                <div class="sm:col-span-2">
-                  <label for="input-text" class="mb-1.5 block text-sm font-medium text-gray-900 dark:text-white">Longitude</label>
-                  <input type="text" name="input-text" id="input-text" class="block w-full rounded-md border border-gray-300 bg-gray-50 p-2 text-sm text-gray-900 focus:border-primary-600 focus:ring-primary-600 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-primary-500 dark:focus:ring-primary-500" required="" />
-                </div>
-              </div>
-              <h2 class="text-base font-semibold leading-7 text-gray-900 mt-6 dark:text-white">Additional Information</h2>
-              <div class="grid gap-4 grid-cols-1 sm:grid-cols-6 sm:gap-6 mt-6 border-b border-gray-900/10 pb-10 dark:border-gray-700">
-                <div class="sm:col-span-3">
-                  <label for="input-text" class="mb-1.5 block text-sm font-medium text-gray-900 dark:text-white">FTI Classification</label>
-                  <input type="text" name="input-text" id="input-text" class="block w-full rounded-md border border-gray-300 bg-gray-50 p-2 text-sm text-gray-900 focus:border-primary-600 focus:ring-primary-600 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-primary-500 dark:focus:ring-primary-500" required="" />
-                </div>
-                <div class="sm:col-span-3">
-                  <label for="input-text" class="mb-1.5 block text-sm font-medium text-gray-900 dark:text-white">Status</label>
-                  <input type="text" name="input-text" id="input-text" class="block w-full rounded-md border border-gray-300 bg-gray-50 p-2 text-sm text-gray-900 focus:border-primary-600 focus:ring-primary-600 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-primary-500 dark:focus:ring-primary-500" required="" />
-                </div>
-                <div class="sm:col-span-full">
-                  <div class="flex items-center">
-                    <input checked id="checked-checkbox" type="checkbox" value="" class="h-4 w-4 rounded border-gray-300 bg-gray-100 text-primary-600 focus:ring-2 focus:ring-primary-500 dark:border-gray-600 dark:bg-gray-700 dark:ring-offset-gray-800 dark:focus:ring-primary-600" />
-                    <label for="checked-checkbox" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Is active</label>
+          <form method="POST" action="." autocomplete="off" novalidate>
+            <div class="space-y-6">
+              <div>
+                <h2 class="m-4 px-2 py-1 rounded-sm text-sm font-semibold leading-7 text-gray-900 bg-gray-200 uppercase">General Information</h2>
+                <div class="px-6 grid grid-cols-1 gap-2 sm:grid-cols-10 place-items-center">
+                  <div class="w-full">
+                    <label for="name" class="block text-sm font-medium text-gray-900 dark:text-white tracking-tight">Hotel Name</label>
+                  </div>
+                  <div class="sm:col-span-3 min-w-full">
+                    <input type="text" name="input-text" id="input-text" class="block w-full rounded-sm border border-gray-300 bg-gray-50 p-1.5 text-sm text-gray-900 focus:border-primary-600 focus:ring-primary-600 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-primary-500 dark:focus:ring-primary-500" required="" />
+                  </div>
+                  <div class="min-w-full col-start-1">
+                    <label for="name" class="block text-sm font-medium text-gray-900 dark:text-white tracking-tight">Chain</label>
+                  </div>
+                  <div class="sm:col-span-2 min-w-full">
+                    <input type="text" name="input-text" id="input-text" class="block min-w-full rounded-sm border border-gray-300 bg-gray-50 p-1.5 text-sm text-gray-900 focus:border-primary-600 focus:ring-primary-600 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-primary-500 dark:focus:ring-primary-500" required="" />
+                  </div>
+                  <div class="min-w-full col-start-1">
+                    <label for="name" class="block text-sm font-medium text-gray-900 dark:text-white tracking-tight">Category</label>
+                  </div>
+                  <div class="w-full">
+                    <input type="text" name="input-text" id="input-text" class="block w-full rounded-sm border border-gray-300 bg-gray-50 p-1.5 text-sm text-gray-900 focus:border-primary-600 focus:ring-primary-600 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-primary-500 dark:focus:ring-primary-500" required="" />
                   </div>
                 </div>
               </div>
-              <h2 class="text-base font-semibold leading-7 text-gray-900 mt-6 dark:text-white">Keywords</h2>
-              <div class="grid gap-4 grid-cols-1 sm:grid-cols-6 sm:gap-6 mt-6 border-b border-gray-900/10 pb-10 dark:border-gray-700">
-                <div class="col-span-full">
-                  <select class="form-control" name="choices-multiple-remote-fetch" id="choices-multiple-remote-fetch" multiple></select>
+              <div>
+                <h2 class="m-4 px-2 py-1 rounded-sm text-sm font-semibold leading-7 text-gray-900 bg-gray-200 uppercase">Location</h2>
+                <div class="px-6 grid grid-cols-1 gap-2 sm:grid-cols-10 place-items-center">
+                  <div class="w-full col-start-1">
+                    <label for="name" class="block text-sm font-medium text-gray-900 dark:text-white tracking-tight">Area</label>
+                  </div>
+                  <div class="sm:col-span-2 w-full">
+                    <input type="text" name="input-text" id="input-text" class="block w-full rounded-sm border border-gray-300 bg-gray-50 p-1.5 text-sm text-gray-900 focus:border-primary-600 focus:ring-primary-600 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-primary-500 dark:focus:ring-primary-500" required="" />
+                  </div>
+                  <div class="w-full col-start-1">
+                    <label for="name" class="block text-sm font-medium text-gray-900 dark:text-white tracking-tight">Latitude</label>
+                  </div>
+                  <div class="w-full">
+                    <input type="text" name="input-text" id="input-text" class="block w-full rounded-sm border border-gray-300 bg-gray-50 p-1.5 text-sm text-gray-900 focus:border-primary-600 focus:ring-primary-600 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-primary-500 dark:focus:ring-primary-500" required="" />
+                  </div>
+                  <div class="w-full col-start-1">
+                    <label for="name" class="block text-sm font-medium text-gray-900 dark:text-white tracking-tight">Longitude</label>
+                  </div>
+                  <div class="w-full">
+                    <input type="text" name="input-text" id="input-text" class="block w-full rounded-sm border border-gray-300 bg-gray-50 p-1.5 text-sm text-gray-900 focus:border-primary-600 focus:ring-primary-600 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-primary-500 dark:focus:ring-primary-500" required="" />
+                  </div>
                 </div>
               </div>
-            </form>
-          </div>
+              <div>
+                <h2 class="m-4 px-2 py-1 rounded-sm text-sm font-semibold leading-7 text-gray-900 bg-gray-200 uppercase">Sales Information</h2>
+                <div class="px-6 grid grid-cols-1 gap-2 sm:grid-cols-10 place-items-center">
+                  <div class="w-full col-start-1">
+                    <label for="name" class="block text-sm font-medium text-gray-900 dark:text-white tracking-tight">Sales Contact</label>
+                  </div>
+                  <div class="sm:col-span-2 w-full">
+                    <input type="text" name="input-text" id="input-text" class="block w-full rounded-sm border border-gray-300 bg-gray-50 p-1.5 text-sm text-gray-900 focus:border-primary-600 focus:ring-primary-600 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-primary-500 dark:focus:ring-primary-500" required="" />
+                  </div>
+                </div>
+              </div>
+              <div>
+                <h2 class="m-4 px-2 py-1 rounded-sm text-sm font-semibold leading-7 text-gray-900 bg-gray-200 uppercase">Purchasing Information</h2>
+                <div class="px-6 grid grid-cols-1 gap-2 sm:grid-cols-10 place-items-center">
+                  <div class="w-full col-start-1">
+                    <label for="name" class="block text-sm font-medium text-gray-900 dark:text-white tracking-tight">Purchase Manager</label>
+                  </div>
+                  <div class="sm:col-span-2 w-full">
+                    <input type="text" name="input-text" id="input-text" class="block w-full rounded-sm border border-gray-300 bg-gray-50 p-1.5 text-sm text-gray-900 focus:border-primary-600 focus:ring-primary-600 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-primary-500 dark:focus:ring-primary-500" required="" />
+                  </div>
+                </div>
+              </div>
+              <div>
+                <h2 class="m-4 px-2 py-1 rounded-sm text-sm font-semibold leading-7 text-gray-900 bg-gray-200 uppercase">Status and Classification</h2>
+                <div class="px-6 grid grid-cols-1 gap-2 sm:grid-cols-10 place-items-center">
+                  <div class="w-full col-start-1">
+                    <label for="name" class="block text-sm font-medium text-gray-900 dark:text-white tracking-tight">FTI Classification</label>
+                  </div>
+                  <div class="w-full">
+                    <input type="text" name="input-text" id="input-text" class="block w-full rounded-sm border border-gray-300 bg-gray-50 p-1.5 text-sm text-gray-900 focus:border-primary-600 focus:ring-primary-600 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-primary-500 dark:focus:ring-primary-500" required="" />
+                  </div>
+                  <div class="w-full col-start-1">
+                    <label for="name" class="block text-sm font-medium text-gray-900 dark:text-white tracking-tight">Status</label>
+                  </div>
+                  <div class="w-full">
+                    <input type="text" name="input-text" id="input-text" class="block w-full rounded-sm border border-gray-300 bg-gray-50 p-1.5 text-sm text-gray-900 focus:border-primary-600 focus:ring-primary-600 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-primary-500 dark:focus:ring-primary-500" required="" />
+                  </div>
+                  <div class="w-full col-start-1">
+                    <label for="name" class="block text-sm font-medium text-gray-900 dark:text-white tracking-tight">Is Active</label>
+                  </div>
+                  <div class="sm:col-span-2 w-full">
+                    <input checked id="checked-checkbox" type="checkbox" value="" class="h-4 w-4 rounded border-gray-300 bg-gray-100 text-primary-600 focus:ring-2 focus:ring-primary-500 dark:border-gray-600 dark:bg-gray-700 dark:ring-offset-gray-800 dark:focus:ring-primary-600" />
+                  </div>
+                </div>
+              </div>
+              <div>
+                <h2 class="m-4 px-2 py-1 rounded-sm text-sm font-semibold leading-7 text-gray-900 bg-gray-200 uppercase">Tags</h2>
+                <div class="px-6 grid grid-cols-1 gap-2 sm:grid-cols-10 place-items-center">
+                  <div class="sm:col-span-4 w-full">
+                    <select class="form-control" name="choices-multiple-remote-fetch" id="choices-multiple-remote-fetch" multiple></select>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
         </div>
         <!-- block_content__end -->
       </div>
