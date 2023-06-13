@@ -17,11 +17,14 @@
 //     instance.setChoiceByValue("Fake Tales Of San Francisco");
 //   });
 
-var multipleFetch = new Choices("#choices-multiple-remote-fetch", {
+var multipleFetch = new Choices("#tags", {
   allowHTML: false,
   maxItemCount: 5,
   searchEnabled: false,
   removeItemButton: true,
+  classNames: {
+    containerInner: "choices__inner min-h-[96px]",
+  },
 }).setChoices(function () {
   return fetch("https://api.discogs.com/artists/55980/releases?token=QBRmstCkwXEvCjTclCpumbtNwvVkEzGAdELXyRyW")
     .then(function (response) {

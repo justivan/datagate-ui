@@ -10,11 +10,11 @@
 }
 
 .choices {
-  @apply text-sm;
+  @apply text-xs;
 }
 
 .choices__input {
-  @apply mb-0 bg-gray-50 text-sm focus:ring-0;
+  @apply mb-0 bg-gray-50 text-xs focus:ring-0;
 }
 
 .choices.is-disabled .choices__inner,
@@ -27,7 +27,7 @@
 }
 
 .choices__inner {
-  @apply min-h-0 rounded-lg border border-gray-300 bg-gray-50 p-0 dark:border-gray-600 dark:bg-gray-700 dark:text-white;
+  @apply rounded-sm border border-gray-300 bg-gray-50 p-0 dark:border-gray-600 dark:bg-gray-700 dark:text-white;
 }
 
 .choices__list--single {
@@ -35,15 +35,15 @@
 }
 
 .choices__list--dropdown {
-  @apply mt-0.5 rounded-lg border border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white;
+  @apply mt-0.5 rounded-sm border border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white;
 }
 
 .choices[data-type*="select-one"] .choices__input {
-  @apply bg-gray-50 p-2.5 text-sm focus:ring-primary-600 dark:bg-gray-700 dark:text-white dark:focus:ring-primary-500;
+  @apply bg-gray-50 p-2.5 text-xs focus:ring-primary-600 dark:bg-gray-700 dark:text-white dark:focus:ring-primary-500;
 }
 
 .choices[data-type*="select-multiple"] .choices__input {
-  @apply bg-gray-50 p-2.5 text-sm focus:ring-primary-600 dark:bg-gray-700 dark:text-white dark:focus:ring-primary-500;
+  @apply bg-gray-50 p-1.5 text-xs focus:ring-primary-600 dark:bg-gray-700 dark:text-white dark:focus:ring-primary-500;
 }
 
 .choices__list--dropdown .choices__item--selectable.is-highlighted {
@@ -56,20 +56,20 @@
 }
 
 .is-open .choices__inner {
-  @apply rounded-lg border-primary-600 ring-1 ring-primary-600 dark:border-primary-500 dark:ring-primary-500;
+  @apply rounded-sm border-primary-600 ring-1 ring-primary-600 dark:border-primary-500 dark:ring-primary-500;
 }
 
 .is-flipped.is-open .choices__inner {
-  @apply rounded-lg;
+  @apply rounded-sm;
 }
 
 .is-flipped .choices__list--dropdown,
 .is-flipped .choices__list[aria-expanded] {
-  @apply rounded-lg;
+  @apply rounded-sm;
 }
 
 .choices__list--multiple .choices__item {
-  @apply ml-1 my-1 rounded bg-primary-500 border-primary-600
+  @apply ml-1 my-1 rounded-sm bg-primary-400 border-primary-600
 }
 
 .choices__list--dropdown .choices__item {
@@ -77,9 +77,13 @@
 }
 
 .is-active.choices__list--dropdown, .is-active.choices__list[aria-expanded] {
-  @apply rounded-lg
+  @apply rounded-sm
 }
 
 .choices.is-disabled .choices__inner,.choices.is-disabled .choices__input {
   @apply bg-gray-50 dark:bg-gray-700 dark:text-white
+}
+
+.choices__list--dropdown .choices__item, .choices__list[aria-expanded] .choices__item {
+  @apply text-xs
 }
