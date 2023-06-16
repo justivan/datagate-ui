@@ -716,16 +716,16 @@ select{
   position: relative;
 }
 
-.sticky{
-  position: sticky;
-}
-
 .-right-14{
   right: -3.5rem;
 }
 
 .-right-3{
   right: -0.75rem;
+}
+
+.bottom-0{
+  bottom: 0px;
 }
 
 .left-0{
@@ -738,10 +738,6 @@ select{
 
 .top-7{
   top: 1.75rem;
-}
-
-.bottom-0{
-  bottom: 0px;
 }
 
 .z-20{
@@ -836,30 +832,6 @@ select{
 
 .h-full{
   height: 100%;
-}
-
-.h-16{
-  height: 4rem;
-}
-
-.h-20{
-  height: 5rem;
-}
-
-.min-h-\[50\%\]{
-  min-height: 50%;
-}
-
-.min-h-\[100\%\]{
-  min-height: 100%;
-}
-
-.min-h-\[\]{
-  min-height: ;
-}
-
-.min-h-\[80px\]{
-  min-height: 80px;
 }
 
 .min-h-\[96px\]{
@@ -1673,10 +1645,6 @@ select{
 }
 
 @media (min-width: 640px){
-  .sm\:fixed{
-    position: fixed;
-  }
-
   .sm\:absolute{
     position: absolute;
   }
@@ -1772,5 +1740,11 @@ select{
   .xl\:text-xl{
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+}
+
+@media (min-width: 1536px){
+  .\32xl\:absolute{
+    position: absolute;
   }
 }
